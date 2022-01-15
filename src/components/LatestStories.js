@@ -35,8 +35,7 @@ const LatestStories = () => {
       </div>
       <div className={styles.LatestStories_Bottom}>
         <div className={styles.LatestStories_CardContainer}>
-          {
-        
+          { // eslint-disable-next-line
             technology.map((article, index) => {
               if (index >= technology.length - 1) {
                 return (
@@ -52,7 +51,7 @@ const LatestStories = () => {
 }
 })
  }
- {
+ { // eslint-disable-next-line
  fitness.map((article, index) => {
  if (index >= fitness.length - 1) {
         return (
@@ -68,7 +67,7 @@ const LatestStories = () => {
  }
  })
   }
- {
+ { // eslint-disable-next-line
     food.map((article, index) => {
  if (index >= food.length - 1) {
      return (
@@ -84,7 +83,7 @@ const LatestStories = () => {
  }
 })
 }
-{
+{ // eslint-disable-next-line
 bollywood.map((article, index) => {
  if (loadMore && index >= bollywood.length - 1) {
      return (
@@ -100,7 +99,7 @@ bollywood.map((article, index) => {
 }
 })
  }
-{
+{ // eslint-disable-next-line
 hollywood.map((article, index) => {
  if (loadMore && index >= hollywood.length - 1) {
 return (

@@ -39,7 +39,7 @@ const Category = () => {
          </div>
          <div className={styles.CategoryPage_Left_Bottom}>
          <div className={styles.CategoryPage_CardContainer}>
-         {  
+         {  // eslint-disable-next-line
          bollywood.map((article, index) => {
          if (article.CategoryName === categoryName && !loadMore && index >= bollywood.length - 3 ) {
               return (
@@ -74,7 +74,7 @@ const Category = () => {
          }
          )
          }
-         {   
+         {   // eslint-disable-next-line
          hollywood.map((article, index) => {
       if (article.CategoryName === categoryName && !loadMore && index>= hollywood.length - 3) {
      return (
@@ -109,7 +109,7 @@ const Category = () => {
       }
      )
      }
-     {   
+     {   // eslint-disable-next-line
         technology.map((article, index) => {
       if (article.CategoryName === categoryName && !loadMore && index >= technology.length - 3) {
             return (
@@ -144,7 +144,7 @@ const Category = () => {
     }
     )
       }
-         {   
+         {   // eslint-disable-next-line
     fitness.map((article, index) => {
      if (article.CategoryName === categoryName && !loadMore && index >= fitness.length - 3) {
             return (
@@ -179,7 +179,7 @@ const Category = () => {
      }
      )
         }
-         {   
+         {   // eslint-disable-next-line
  food.map((article, index) => {
  if (article.CategoryName === categoryName && !loadMore && index >= food.length - 3) {
  return (

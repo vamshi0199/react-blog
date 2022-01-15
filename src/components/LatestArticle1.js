@@ -37,7 +37,7 @@ const LatestArticle1 = () => {
       <div className={styles.category1_Bottom}>
     <div className={styles.category1_Bottom_Left}>
      <div className={ styles.category1_Bottom_Left1 }>
-    {   
+    {   // eslint-disable-next-line
     bollywood.map((article, index) => {
      if(!loadMore && index>=bollywood.length-3){
       return(
@@ -74,7 +74,7 @@ const LatestArticle1 = () => {
    </div>
   <div><button className={ styles.loadMore_Btn3 } onClick={handleClick}>{arrow}{loadMoreBtn}</button></div>
               <div>
-    {   
+    {   // eslint-disable-next-line
          hollywood.map(  (article, index) => {
       if(index>=hollywood.length-1) {
      return(

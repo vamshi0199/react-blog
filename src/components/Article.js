@@ -238,7 +238,7 @@ const Article = () => {
  <div className={ styles.Article_Related_Content }>
  <div className={ styles.Related_Content_Top }>More From The Siren</div>
  <div className={ styles.Related_Content_Bottom }>
- {   
+ {   // eslint-disable-next-line
  bollywood.map( (article, index) => {
  if(article.CategoryName === articleCategory && index>=bollywood.length-5 && article.Title !== articleTitle) {
          return(
@@ -258,7 +258,7 @@ const Article = () => {
  }
  )
          }
-         {   
+         {   // eslint-disable-next-line
   hollywood.map( (article, index) => {
           if(article.CategoryName === articleCategory && index>=hollywood.length-5 && article.Title !== articleTitle) {
                  return(
@@ -277,7 +277,7 @@ const Article = () => {
           }
           })
           }
-         {  
+         {  // eslint-disable-next-line
         technology.map( (article, index) => {
           if(article.CategoryName === articleCategory && index>=technology.length-5 && article.Title !== articleTitle) {
                  return(
@@ -296,7 +296,7 @@ const Article = () => {
           }
          })
          }
-         {   
+         {   // eslint-disable-next-line
           fitness.map( (article, index) => {
          if(article.CategoryName === articleCategory && index>=fitness.length-5 && article.Title !== articleTitle) {
   return(
@@ -315,7 +315,7 @@ const Article = () => {
          }
           })
          }
-         {   
+         {   // eslint-disable-next-line
           food.map( (article, index) => {
          if(article.CategoryName === articleCategory && index>=food.length-5 && article.Title !== articleTitle) {
           return(

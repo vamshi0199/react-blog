@@ -14,7 +14,7 @@ const ArticleComponents = () => {
     return(
  <div className={styles.featured_Articles_Component}>
      <div className={styles.featured_Articles_Left}>
-     {   
+     {   // eslint-disable-next-line
       bollywood.map(  (article, index) => {
       if(index>=bollywood.length-1) {
          return(
@@ -34,7 +34,7 @@ const ArticleComponents = () => {
    </div>
      <div className={styles.featured_Articles_Right}>
      <div className={styles.featured_Articles_Right1}>
-         {   
+         {   // eslint-disable-next-line
       hollywood.map(  (article, index) => {
      if(index>=hollywood.length-1) {
             return(
@@ -53,7 +53,7 @@ const ArticleComponents = () => {
      }
      </div>
      <div className={styles.featured_Articles_Right2}>
-          {   
+          {   // eslint-disable-next-line
     technology.map(  (article, index) => {
      if(index>=technology.length-1) {
      return(
