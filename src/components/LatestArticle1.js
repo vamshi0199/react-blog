@@ -6,7 +6,7 @@ import TopPosts from "./TopPosts";
 
 
 const LatestArticle1 = () => {
-    const [loadMore, setLoadMore] = useState(false);
+    const [loadMore,setLoadMore] = useState(false);
     const [loadMoreBtn, setLoadMoreBtn] = useState('Load More');
     const [arrow, setArrow] = useState(<i className="fas fa-arrow-down" ></i>);
 
@@ -72,13 +72,13 @@ const LatestArticle1 = () => {
      })
      }
    </div>
-  <div><button className={ styles.loadMore_Btn } onClick={handleClick}>{arrow}{loadMoreBtn}</button></div>
+  <div><button className={ styles.loadMore_Btn3 } onClick={handleClick}>{arrow}{loadMoreBtn}</button></div>
               <div>
     {   
          hollywood.map(  (article, index) => {
       if(index>=hollywood.length-1) {
      return(
-  <div className={ styles.category2_Card } key={index}  style={   {backgroundImage: `url(${article.ImageAsset})`,  backgroundPosition: 'center',  backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }  }>
+  <div className={ styles.category2_Card } key={index}  style={{backgroundImage: `url(${article.ImageAsset})`,  backgroundPosition: 'center',  backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }  }>
      <div className={ styles.category2_Child}>
   <NavLink to={`/article/${article.Title}/${article.CategoryName}`} className={ styles.category2_Title}>{ article.Title }</NavLink>
   <div className={ styles.category2_NameAndDate}>{ article.CategoryName } / { article.PublishedDate }</div>

@@ -32,7 +32,7 @@ const TopPosts = () => {
             <div className={ styles.topPosts_Bottom}>
 {   
 tempArrFinal.map( (object, index) => {
-if(index === 0) {
+if(index) {
 return(
 <div className={styles.topPosts_CardPrimary} key={index}>
 <div className={styles.cardPrimary_Top}><img className={styles.cardPrimary_Image} src={ object.ImageAsset } alt="From the article" /></div>
@@ -44,13 +44,13 @@ return(
 <span className={ styles.category1_PublishedDate }> / { object.PublishedDate }</span>
 </div>
 </div>
-<div className={styles.cardPrimary_Bottom2}>{ index+1 }</div>
+<div className={styles.cardPrimary_Bottom2}>{ index }</div>
 </div>
 </div>
 )
 }
 
-if(index !== 0) {
+if(index ) {
 return(
 <div className={styles.topPosts_CardSecondary} key={index}>
 <div className={styles.cardSecondary_Left}><img className={styles.cardSecondary_Image} src={ object.ImageAsset } alt="From the article" /></div>
@@ -62,7 +62,7 @@ return(
 <span className={ styles.cardSecondary_PublishedDate }> / { object.PublishedDate }</span>
 </div>
 </div>
-<div className={styles.cardSecondary_Right2}>{ index+1 }</div>
+<div className={styles.cardSecondary_Right2}>{ index }</div>
 </div>
 </div>
 )

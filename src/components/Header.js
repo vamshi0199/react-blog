@@ -13,12 +13,14 @@ const Header = () => {
          <div className={styles.main_Header_Logo_Top}>The</div>
          <div className={styles.main_Header_Logo_Bottom}>Siren</div>
          </NavLink>
+         
              </div>
                         <div>
                             <MobileView/>
                         </div>
              </div>
          <div className={styles.main_Header_Bottom}>
+        
             <div>
          <NavLink to='/home' className={styles.main_Header_Items} >Home</NavLink>
               </div>
@@ -37,9 +39,14 @@ const Header = () => {
              <div>
          <NavLink to='/Category/Food' className={styles.main_Header_Items}>Food</NavLink>
              </div>
+             
           </div>
           </div>
+          <div className={styles.main_hr_tag}>
+         < hr/>
+     </div>
         </div>
+        
     )
 }
 

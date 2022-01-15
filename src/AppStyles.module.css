@@ -1,5 +1,10 @@
 .commonStyle {
     margin-top: 2vw;
+}
+.main_hr_tag{
+  margin-top: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
 } 
   .main_Header {
     display: flex;
@@ -22,6 +27,7 @@
   
   .main_Header_Items {
     text-decoration: none;
+    color: black;
   }
   
   .main_Header_Logo {
@@ -188,7 +194,19 @@
     font-weight: 500;
     font-size: 17px;
   }
-  .loadMore_Btn {
+  .loadMore_Btn3 {
+    margin-top: -45vh;
+    background-color: white;
+    border-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    color: #a2a2a2;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+  }
+  .loadMore_Btn{
     background-color: white;
     border-style: none;
     display: flex;
@@ -257,6 +275,7 @@
     border-radius: 10px;
   }
   .category2_Card {
+    margin-top: -80vh;
     height: 25vw;
     width: 100%;
     border-radius: 10px;
@@ -285,6 +304,7 @@
   }
   .advertisement {
     background-color: peachpuff;
+    margin-left: 20px;
     height: 63vh;
     width: 20vw;
     display: flex;
@@ -295,6 +315,7 @@
   }
   .topPosts_Main {
     margin-top: 1vw;
+    margin-left: 20px;
   }
   
   .topPosts_Top {

@@ -5,7 +5,7 @@ import styles from '../AppStyles.module.css';
 import TopPosts from "./TopPosts";
 
 
-const CategoryPage = () => {
+const Category = () => {
     const { categoryName } = useParams();
 
     const [loadMore, setLoadMore] = useState(false);
@@ -39,9 +39,9 @@ const CategoryPage = () => {
          </div>
          <div className={styles.CategoryPage_Left_Bottom}>
          <div className={styles.CategoryPage_CardContainer}>
-                        {  
+         {  
          bollywood.map((article, index) => {
-         if (article.CategoryName === categoryName && !loadMore && index >= bollywood.length - 3) {
+         if (article.CategoryName === categoryName && !loadMore && index >= bollywood.length - 3 ) {
               return (
            <div key={index} className={styles.category1_Card}>
          <div><img className={styles.category1_Image} src={article.ImageAsset} alt="From the Article" /></div>
@@ -228,4 +228,4 @@ const CategoryPage = () => {
     )
 }
 
-export default CategoryPage;
+export default Category;
